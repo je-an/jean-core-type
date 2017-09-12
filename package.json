@@ -1,0 +1,23 @@
+{
+  "name": "jean-core-type",
+  "version": "0.0.3",
+  "description": "Provides base types for jean environment",
+  "main": "",
+  "scripts": {
+    "test": "open spec/spec-runner.html in browser"
+  },
+  "keywords": [
+    "core",
+    "type"
+  ],
+  "author": "Jeremias Andris",
+  "license": "MIT",
+  "dependencies": {
+    "almond": "^0.3.3",
+    "jquery": "^3.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/je-an/jean-core-type.git"
+  }
+}
