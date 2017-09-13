@@ -443,19 +443,23 @@ var requirejs, require, define;
 
 define("node_modules/almond/almond", function(){});
 
-define('InterfaceError',[], function () {
-    var InterfaceError = function (message) {
-        this.name = "Interface Error";
-        this.message = (message || "Method must be implemented in Class");
+define('NotImplementedError',[], function () {
+    /**
+     * Represents a error message for non implemented methods
+     * @param {String} message - message of error
+     */
+    var NotImplementedError = function (message) {
+        this.name = "NotImplementedError";
+        this.message = (message || "Function must be implemented in Class");
     };
-    InterfaceError.prototype = Error.prototype;
-    return InterfaceError; 
+    NotImplementedError.prototype = Error.prototype; 
+    return NotImplementedError; 
 }); 
 define('src/CoreType',[
-    'InterfaceError'
-], function (InterfaceError) {
+    'NotImplementedError'
+], function (NotImplementedError) {
     return {
-        InterfaceError: InterfaceError
+        NotImplementedError: NotImplementedError
     };
 });
 

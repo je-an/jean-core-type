@@ -18,6 +18,6 @@
         "}));"
     },
     paths: {
-        InterfaceError: "src/error/InterfaceError"
+        NotImplementedError: "src/error/NotImplementedError"
     }
 })

@@ -1,7 +1,7 @@
 define([
-    'InterfaceError'
-], function (InterfaceError) {
+    'NotImplementedError'
+], function (NotImplementedError) {
     return {
-        InterfaceError: InterfaceError
+        NotImplementedError: NotImplementedError
     };
 });
