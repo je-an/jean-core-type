@@ -1,6 +1,6 @@
 {
   "name": "jean-core-type",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Provides base types for jean environment",
   "main": "",
   "scripts": {
