@@ -18,6 +18,7 @@
         "}));"
     },
     paths: {
-        NotImplementedError: "src/error/NotImplementedError"
+        NotImplementedError: "src/error/NotImplementedError",
+        StorageNotDefinedError: "src/error/StorageNotDefinedError",
     }
 })
