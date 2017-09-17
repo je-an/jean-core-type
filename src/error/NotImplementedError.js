@@ -8,5 +8,5 @@ define([], function () {
         this.message = (message || "Function must be implemented in Class");
     };
     NotImplementedError.prototype = Error.prototype; 
-    return NotImplementedError; 
+    return NotImplementedError;
 }); 

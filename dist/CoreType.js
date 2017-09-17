@@ -453,13 +453,27 @@ define('NotImplementedError',[], function () {
         this.message = (message || "Function must be implemented in Class");
     };
     NotImplementedError.prototype = Error.prototype; 
-    return NotImplementedError; 
+    return NotImplementedError;
+}); 
+define('StorageNotDefinedError',[], function () {
+    /**
+     * Represents a error message for non implemented methods
+     * @param {String} message - message of error
+     */
+    var StorageNotDefinedError = function (message) {
+        this.name = "StorageNotDefinedError";
+        this.message = (message || "Storage must be configured");
+    };
+    StorageNotDefinedError.prototype = Error.prototype; 
+    return StorageNotDefinedError; 
 }); 
 define('src/CoreType',[
-    'NotImplementedError'
-], function (NotImplementedError) {
+    'NotImplementedError',
+    'StorageNotDefinedError'
+], function (NotImplementedError, StorageNotDefinedError) {
     return {
-        NotImplementedError: NotImplementedError
+        NotImplementedError: NotImplementedError,
+        StorageNotDefinedError: StorageNotDefinedError
     };
 });
 

@@ -19,6 +19,6 @@
     },
     paths: {
         NotImplementedError: "src/error/NotImplementedError",
-        StorageNotDefinedError: "src/error/StorageNotDefinedError",
+        StorageNotDefinedError: "src/error/StorageNotDefinedError"
     }
 })

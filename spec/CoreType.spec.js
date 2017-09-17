@@ -1,28 +1,45 @@
-define(["NotImplementedError"], function (NotImplementedError) {
-    describe('CoreType.spec.js', function () {
-        describe("NotImplementedError", function () {
-            var ie = {}, numberOfMembers = 2 /*, numberOfMethods = 0 */;
-            beforeEach(function () {
-                ie = new NotImplementedError();
+define([
+    "NotImplementedError",
+    "StorageNotDefinedError"
+],
+    function (
+        NotImplementedError,
+        StorageNotDefinedError
+    ) {
+        describe('CoreType.spec.js', function () {
+            describe("NotImplementedError", function () {
+                var ie = {};
+                beforeEach(function () {
+                    ie = new NotImplementedError();
+                });
+                describe("Constructor", function () {
+                    it("TODO: Check if all members are available | EXPECTATION: EventDispatcher has all necessary members", function () {
+                        var numberOfMembers = 2;
+                        expect(Object.keys(ie).length).toEqual(numberOfMembers);
+                    });
+                    it("TODO: Check if all methods are available | EXPECTATION: EventDispatcher has all necessary methods", function () {
+                        var numberOfMethods = 0;
+                        var methodCount = Object.keys(Object.getPrototypeOf(ie)).length;
+                        expect(methodCount).toEqual(numberOfMethods);
+                    });
+                });
             });
-            describe("NotImplementedError Constructor", function () {
-                it("TODO: Check if members and methods are available | EXPECTATION: List has all necessary methods", function () {
-                    // Member
-                    expect(ie.name).not.toBeUndefined();
-                    expect(ie.message).not.toBeUndefined();
-
-                    // Prüft, ob alle Member vorhanden sind
-                    var memberCount = Object.keys(ie).length;
-                    expect(memberCount).toEqual(numberOfMembers);
-
-                    // Methoden
-
-
-                    // Prüft ob die 
-                    /*  var methodCount = Object.keys(Object.getPrototypeOf(ie)).length;
-                     expect(methodCount).toEqual(numberOfMethods); */
+            describe("StorageNotDefinedError", function () {
+                var ie = {};
+                beforeEach(function () {
+                    ie = new NotImplementedError();
+                });
+                describe("Constructor", function () {
+                    it("TODO: Check if all members are available | EXPECTATION: EventDispatcher has all necessary members", function () {
+                        var numberOfMembers = 2;
+                        expect(Object.keys(ie).length).toEqual(numberOfMembers);
+                    });
+                    it("TODO: Check if all methods are available | EXPECTATION: EventDispatcher has all necessary methods", function () {
+                        var numberOfMethods = 0;
+                        var methodCount = Object.keys(Object.getPrototypeOf(ie)).length;
+                        expect(methodCount).toEqual(numberOfMethods);
+                    });
                 });
             });
         });
     });
-});
