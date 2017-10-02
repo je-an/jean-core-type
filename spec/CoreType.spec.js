@@ -1,23 +1,21 @@
 define([
-    "NotImplementedError",
-    "StorageNotDefinedError"
+    "CoreType"
 ],
     function (
-        NotImplementedError,
-        StorageNotDefinedError
+        CoreType
     ) {
         describe('CoreType.spec.js', function () {
             describe("NotImplementedError", function () {
                 var ie = {};
                 beforeEach(function () {
-                    ie = new NotImplementedError();
+                    ie = new CoreType.NotImplementedError();
                 });
                 describe("Constructor", function () {
-                    it("TODO: Check if all members are available | EXPECTATION: EventDispatcher has all necessary members", function () {
+                    it("Has all necessary members", function () {
                         var numberOfMembers = 2;
                         expect(Object.keys(ie).length).toEqual(numberOfMembers);
                     });
-                    it("TODO: Check if all methods are available | EXPECTATION: EventDispatcher has all necessary methods", function () {
+                    it("Has all necessary methods", function () {
                         var numberOfMethods = 0;
                         var methodCount = Object.keys(Object.getPrototypeOf(ie)).length;
                         expect(methodCount).toEqual(numberOfMethods);
@@ -27,14 +25,14 @@ define([
             describe("StorageNotDefinedError", function () {
                 var ie = {};
                 beforeEach(function () {
-                    ie = new NotImplementedError();
+                    ie = new CoreType.StorageNotDefinedError();
                 });
                 describe("Constructor", function () {
-                    it("TODO: Check if all members are available | EXPECTATION: EventDispatcher has all necessary members", function () {
+                    it("Has all necessary member", function () {
                         var numberOfMembers = 2;
                         expect(Object.keys(ie).length).toEqual(numberOfMembers);
                     });
-                    it("TODO: Check if all methods are available | EXPECTATION: EventDispatcher has all necessary methods", function () {
+                    it("Has all necessary methods", function () {
                         var numberOfMethods = 0;
                         var methodCount = Object.keys(Object.getPrototypeOf(ie)).length;
                         expect(methodCount).toEqual(numberOfMethods);

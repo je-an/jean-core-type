@@ -1,8 +1,9 @@
 ({
     baseUrl: '.',
-    out: 'dist/CoreType.js',
-    optimize: 'none',
-    include: ["node_modules/almond/almond", "src/CoreType"],
+    out: 'dist/jean-core-type.js',
+    optimize: 'uglify2',
+    name: "node_modules/jean-amd/dist/jean-amd",
+    include: ["src/CoreType"],
     wrap: {
         start: 
         "(function (root, factory) { \n" +
