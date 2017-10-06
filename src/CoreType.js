@@ -1,9 +1,11 @@
 define([
     'NotImplementedError',
-    'StorageNotDefinedError'
-], function (NotImplementedError, StorageNotDefinedError) {
+    'StorageNotDefinedError',
+    'Control'
+], function (NotImplementedError, StorageNotDefinedError, Control) {
     return {
         NotImplementedError: NotImplementedError,
-        StorageNotDefinedError: StorageNotDefinedError
+        StorageNotDefinedError: StorageNotDefinedError,
+        Control: Control
     };
 });

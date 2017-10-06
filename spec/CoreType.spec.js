@@ -39,5 +39,8 @@ define([
                     });
                 });
             });
+            describe("Control", function(){
+
+            });
         });
     });

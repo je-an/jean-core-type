@@ -20,6 +20,7 @@
     },
     paths: {
         NotImplementedError: "src/error/NotImplementedError",
-        StorageNotDefinedError: "src/error/StorageNotDefinedError"
+        StorageNotDefinedError: "src/error/StorageNotDefinedError",
+        Control: "src/control/Control"
     }
 })

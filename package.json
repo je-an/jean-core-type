@@ -1,6 +1,6 @@
 {
   "name": "jean-core-type",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "description": "Provides base types for jean environment",
   "main": "",
   "scripts": {
@@ -13,7 +13,8 @@
   "author": "Jeremias Andris",
   "license": "MIT",
   "dependencies": {
-    "jean-amd": "0.0.5",
+    "jean-amd": "1.0.1",
+    "jean-type-check": "0.0.6",
     "jquery": "^3.2.1"
   },
   "repository": {
