@@ -9,6 +9,8 @@
         "(function (root, factory) { \n" +
         " \t if (typeof define === 'function' && define.amd) { \n" +
         "\t \t define([], factory); \n" +
+        "\t} else if(typeof module === 'object' && module.exports) { \n" +
+        "\t\t module.exports = factory(); \n " +
         "\t} else { \n" +
         "\t \troot.CoreType = root.CoreType || {}; \n" +
         "\t \troot.CoreType = factory();\n" +
@@ -21,6 +23,8 @@
     paths: {
         NotImplementedError: "src/error/NotImplementedError",
         StorageNotDefinedError: "src/error/StorageNotDefinedError",
-        Control: "src/control/Control"
+        Control: "src/control/Control",
+        jquery: "node_modules/jquery/dist/jquery",
+        TypeCheck: "node_modules/jean-type-check/dist/jean-type-check"
     }
 })

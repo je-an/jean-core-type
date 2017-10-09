@@ -1,6 +1,6 @@
 {
   "name": "jean-core-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides base types for jean environment",
   "main": "",
   "scripts": {
@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "jean-amd": "1.0.1",
-    "jean-type-check": "0.0.6",
+    "jean-type-check": "1.0.2",
     "jquery": "^3.2.1"
   },
   "repository": {

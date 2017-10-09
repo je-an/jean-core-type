@@ -8,5 +8,5 @@ define([], function () {
         this.message = (message || "Storage must be configured");
     };
     StorageNotDefinedError.prototype = Error.prototype; 
-    return StorageNotDefinedError; 
+    return StorageNotDefinedError;
 }); 
