@@ -1,6 +1,6 @@
 ## MIT License
 
-### Copyright (c) 2017 Jeremias Andris | jean-core-type
+### Copyright (c) 2017 - 2018 Jeremias Andris | jean-core-type
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
